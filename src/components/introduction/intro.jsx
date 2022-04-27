@@ -4,7 +4,7 @@ const Intro = () => {
     return (
         <div className="intro">
             <div className="intro-left">
-                <div className="intro-wrapper">
+                <div className="intro-left-wrapper">
                     <h1 class="intro-heading">I'm Leandro Carvalho</h1>
                     <div className="intro-title">
                         <div className="intro-title-wrapper">
@@ -14,6 +14,9 @@ const Intro = () => {
                             <div className="intro-title-item">linguist</div>
                             <div className="intro-title-item">traveler</div>
                         </div>
+                    </div>
+                    <div className="intro-description">
+                        I am a developer and I do things, and this should be a better description.
                     </div>
                 </div>
             </div>
