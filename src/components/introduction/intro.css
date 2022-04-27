@@ -1,12 +1,57 @@
-.intro{
-    display:flex;
+.intro {
+    display: flex;
     height: 100vh;
     background-color: blue;
 }
 
-.intro-left{
+.intro-wrapper {
+    padding: 50px;
+}
+
+.intro-heading {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.intro-title {
+    height: 50px;
+    overflow: hidden;
+}
+
+.intro-title-wrapper {
+    height: 100%;
+    animation: move 8s ease-out infinite alternate;
+}
+
+@keyframes move {
+    25% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+
+    75% {
+        transform: translateY(-150px);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+.intro-title-item {
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.intro-left {
     flex: 1;
 }
-.intro-right{
+
+.intro-right {
     flex: 1;
 }
