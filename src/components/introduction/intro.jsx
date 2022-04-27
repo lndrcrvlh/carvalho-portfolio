@@ -1,4 +1,5 @@
 import "./intro.css"
+import lc from "../../images/lc-1.jpg"
 
 const Intro = () => {
     return (
@@ -20,7 +21,10 @@ const Intro = () => {
                     </div>
                 </div>
             </div>
-            <div className="intro-right">right</div>
+            <div className="intro-right">
+                <div className="intro-bg"></div>
+                <img src={lc} alt="Leandro Carvalho" className="intro-img" />
+            </div>
         </div>
     );
 };
