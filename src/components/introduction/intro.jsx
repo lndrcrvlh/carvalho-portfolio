@@ -16,9 +16,9 @@ const Intro = () => {
                             <div className="intro-title-item">traveler</div>
                         </div>
                     </div>
-                    <div className="intro-description">
+                    <p className="intro-description">
                         I am a developer and I do things, and this should be a better description.
-                    </div>
+                    </p>
                 </div>
             </div>
             <div className="intro-right">
