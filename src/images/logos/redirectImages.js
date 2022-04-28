@@ -13,7 +13,7 @@ const IMAGES = {
   php: require("./php.png"),
   react: require("./react.png"),
   rust: require("./rust.png"),
-  ubuntu: require("./rust.png"),
+  ubuntu: require("./ubuntu.png"),
   wordpress: require("./wordpress.png"),
 };
 
