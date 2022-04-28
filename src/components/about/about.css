@@ -1,0 +1,19 @@
+.about {
+  height: 100vh;
+  background: #010401;
+  color: #efefef;
+  display: flex;
+  align-items: center;
+}
+
+.about-left {
+  flex: 1;
+}
+.about-right {
+  flex: 2;
+}
+.about-heading {
+  font-family: "fira code", sans-serif;
+  font-size: 40px;
+  padding: 5vh 5vw 5vh 0px;
+}
