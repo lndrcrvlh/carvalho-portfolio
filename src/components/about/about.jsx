@@ -1,12 +1,13 @@
 import React from "react";
 import "./about.css";
+import IMAGES from "../../images/logos/redirectImages";
 
 const About = () => {
   return (
     <div className="about">
       <div className="about-left">
         <div className="about-card">
-          <img src="" alt="" />
+          <img className="skill-logo" src={IMAGES.logoCanva} alt="canva" />
         </div>
       </div>
       <div className="about-right">
