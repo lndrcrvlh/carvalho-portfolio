@@ -6,8 +6,22 @@ const About = () => {
   return (
     <div className="about">
       <div className="about-left">
-        <div className="about-card">
-          <img className="skill-logo" src={IMAGES.logoCanva} alt="canva" />
+        <div className="about-skills">
+          <img src={IMAGES.Canva} alt="canva" className="skill-logo" />
+          <img src={IMAGES.CSS} alt="CSS" className="skill-logo" />
+          <img src={IMAGES.Elementor} alt="Elementor" className="skill-logo" />
+          <img src={IMAGES.GIMP} alt="GIMP" className="skill-logo" />
+          <img src={IMAGES.git} alt="git" className="skill-logo" />
+          <img src={IMAGES.html} alt="HTML" className="skill-logo" />
+          <img src={IMAGES.javascript} alt="javascript" className="skill-logo" />
+          <img src={IMAGES.mongoDB} alt="mongoDB" className="skill-logo" />
+          <img src={IMAGES.mysql} alt="mySQL" className="skill-logo" />
+          <img src={IMAGES.nodeJS} alt="NodeJS" className="skill-logo" />
+          <img src={IMAGES.php} alt="PHP" className="skill-logo" />
+          <img src={IMAGES.react} alt="React" className="skill-logo" />
+          <img src={IMAGES.rust} alt="Rust" className="skill-logo" />
+          <img src={IMAGES.ubuntu} alt="Ubuntu/Linux" className="skill-logo" />
+          <img src={IMAGES.wordpress} alt="WordPress" className="skill-logo" />
         </div>
       </div>
       <div className="about-right">

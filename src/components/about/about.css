@@ -8,6 +8,8 @@
 
 .about-left {
   flex: 1;
+  height: 100%;
+
 }
 .about-right {
   flex: 2;
@@ -16,4 +18,18 @@
   font-family: "fira code", sans-serif;
   font-size: 40px;
   padding: 5vh 5vw 5vh 0px;
+}
+
+.about-skills{
+    background-color: #efefef;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.skill-logo{
+    padding: 1.5%;
+    width: 30%;
 }
