@@ -23,13 +23,14 @@
 .about-skills{
     background-color: #efefef;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50% 50% 50% 50%;
     overflow: hidden;
 }
 
 .skill-logo{
-    padding: 1.5%;
-    width: 30%;
+    padding: 10%;
+    margin: auto;
+    max-height: 30%;
+    max-width: 30%;
 }
