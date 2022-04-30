@@ -23,9 +23,14 @@
 .about-skills{
     background-color: #efefef;
     height: 100%;
+    overflow: hidden;
+}
+
+.about-skills-wrapper{
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50% 50% 50% 50%;
-    overflow: hidden;
+    animation: moveSkills 10s ease-out infinite alternate;
 }
 
 .skill-logo{
@@ -33,4 +38,21 @@
     margin: auto;
     max-height: 30%;
     max-width: 30%;
+}
+
+@keyframes moveSkills {
+    25% {
+        transform: translateX(-50%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    75% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
 }
