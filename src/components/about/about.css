@@ -13,6 +13,7 @@
 }
 .about-right {
   flex: 2;
+  padding: 3vh 5vw 3vh 3vw;
 }
 .about-heading {
   font-family: "fira code", sans-serif;
@@ -31,6 +32,7 @@
     display: grid;
     grid-template-columns: 50% 50% 50% 50% 50%;
     animation: moveSkills 10s ease-out infinite alternate;
+    animation-delay: 3s;
 }
 
 .skill-logo{
