@@ -41,18 +41,15 @@
 }
 
 @keyframes moveSkills {
-    25% {
+    33% {
         transform: translateX(-50%);
     }
 
-    50% {
+    66% {
         transform: translateX(-100%);
     }
 
-    75% {
-        transform: translateX(-150%);
-    }
     100% {
-        transform: translateX(-200%);
+        transform: translateX(-150%);
     }
 }
