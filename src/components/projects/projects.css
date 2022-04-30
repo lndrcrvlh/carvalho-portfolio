@@ -1,3 +1,32 @@
 .projects{
     height: 100vh;
+    background-color: #010401;
+    color: #efefef;
+    display: flex;
+}
+.projects-left{
+    flex: 1;
+}
+
+.projects-right{
+    flex: 2;
+}
+
+.projects-header{
+    font-size: 40px;
+    font-family: 'Fira Code',sans-serif;
+}
+
+.project{
+    height: 100vh;
+}
+
+.project-container{
+    display: grid;
+    columns: 100%;
+}
+
+.project-header{
+    font-size: 40px;
+    font-family: 'Fira Code',sans-serif;
 }
