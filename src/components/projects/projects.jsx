@@ -1,5 +1,8 @@
 import React from "react";
+import { ReactDOM } from "react-dom";
 import "./projects.css";
+import BasicTabs from "../tabs/projectsTabs.tsx";
+
 
 function Projects() {
   return (
@@ -15,18 +18,7 @@ function Projects() {
       </div>
       <div className="projects-right">
         <div className="project-container">
-          <div className="project">
-            <div className="project-header">Project 1</div>
-            <div className="project-description">lorem ipsum....</div>
-          </div>
-          <div className="project">
-            <div className="project-header">Project 2</div>
-            <div className="project-description">lorem ipsum....</div>
-          </div>
-          <div className="project">
-            <div className="project-header">Project 3</div>
-            <div className="project-description">lorem ipsum....</div>
-          </div>
+          <BasicTabs  />
         </div>
       </div>
     </div>
