@@ -1,5 +1,5 @@
 import "./intro.css"
-import lc from "../../images/lc-1.jpg"
+import lc from "../../images/lc-2.png"
 
 const Intro = () => {
     return (
