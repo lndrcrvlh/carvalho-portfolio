@@ -1,8 +1,11 @@
 import * as React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+
+import TabsUnstyled from "@mui/base/TabsUnstyled";
+import TabsListUnstyled from "@mui/base/TabUnstyled";
+import TabUnstyled from "@mui/base/TabUnstyled";
+import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -45,27 +48,22 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label="basic tabs example"
-        >
-          <Tab label="Item One" {...a11yProps(0)} />
-          <Tab label="Item Two" {...a11yProps(1)} />
-          <Tab label="Item Three" {...a11yProps(2)} />
-        </Tabs>
-      </Box>
-      <TabPanel value={value} index={0}>
-        Item One
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
-      </TabPanel>
-    </Box>
+    <TabsUnstyled defaultValue={0}>
+      <TabsListUnstyled>
+        <TabUnstyled value={0}>One</TabUnstyled>
+        <TabUnstyled value={1}>Two</TabUnstyled>
+        <TabUnstyled value={2}>Three</TabUnstyled>
+      </TabsListUnstyled>
+      <TabPanelUnstyled value={0}>
+        <p>Web master at the Behavior Web.</p>
+        <p>
+          This role involves making sure that we can meet the needs of the
+          business through tech. Responsible for making tech related decisions,
+          designing and implementing the wordpress website and managing the LMS.
+        </p>
+      </TabPanelUnstyled>
+      <TabPanelUnstyled value={1}>Second page</TabPanelUnstyled>
+      <TabPanelUnstyled value={2}>Third page</TabPanelUnstyled>
+    </TabsUnstyled>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { ReactDOM } from "react-dom";
 import "./projects.css";
 import BasicTabs from "../tabs/projectsTabs.tsx";
 
