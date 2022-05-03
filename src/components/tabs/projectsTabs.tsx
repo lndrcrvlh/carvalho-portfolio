@@ -1,30 +1,97 @@
 import * as React from "react";
-import TabsUnstyled from "@mui/base/TabsUnstyled";
-import TabsListUnstyled from "@mui/base/TabUnstyled";
-import TabUnstyled from "@mui/base/TabUnstyled";
-import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
-import './projectsTabs.css'
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+// import "./projectsTabs.css";
+
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: number;
+  value: number;
+}
+
+function TabPanel(props: TabPanelProps) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+const style = {
+  backgroundColor: "#010401",
+  color: "#efefef",
+  border: "none",
+  fontFamily: "fira code",
+};
+
+function a11yProps(index: number) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
 
 export default function BasicTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    setValue(newValue);
+  };
+
   return (
-    <TabsUnstyled defaultValue={0}>
-      <TabsListUnstyled className="tabs-buttons">
-        <TabUnstyled className="tab">The Behavior Web</TabUnstyled>
-        <TabUnstyled className="tab">Recommendation Engines</TabUnstyled>
-        <TabUnstyled className="tab">Dealflow</TabUnstyled>
-        <TabUnstyled className="tab">Freelance</TabUnstyled>
-      </TabsListUnstyled>
-      <TabPanelUnstyled value={0}>
+    <Box
+      sx={{
+        width: "100%",
+      }}
+    >
+      <Box sx={{ borderBottom: 1, borderColor: "primary" }}>
+        <Tabs
+          sx={{ ...style }}
+          className="tabs-buttons"
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+          centered
+        >
+          <Tab sx={{ ...style }} label="The Behavior Web" {...a11yProps(0)} />
+          <Tab
+            sx={{...style}}
+            label="Recommendation Engines"
+            {...a11yProps(1)}
+          />
+          <Tab sx={{...style}} label="Dealflow" {...a11yProps(2)} />
+          <Tab sx={{...style}} label="Freelance" {...a11yProps(3)} />
+        </Tabs>
+      </Box>
+      <TabPanel value={value} index={0}>
         <p>Web master at the Behavior Web.</p>
         <p>
           This role involves making sure that we can meet the needs of the
           business through tech. Responsible for making tech related decisions,
           designing and implementing the wordpress website and managing the LMS.
         </p>
-      </TabPanelUnstyled>
-      <TabPanelUnstyled value={1}>Second page</TabPanelUnstyled>
-      <TabPanelUnstyled value={2}>Third page</TabPanelUnstyled>
-      <TabPanelUnstyled value={3}>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        Item Two
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        Item Three
+      </TabPanel>
+      <TabPanel value={value} index={3}>
         Freelance projects I help people get the most out of their online
         business.
         <ul>
@@ -43,7 +110,7 @@ export default function BasicTabs() {
             in quizzes.
           </li>
         </ul>
-      </TabPanelUnstyled>
-    </TabsUnstyled>
+      </TabPanel>
+    </Box>
   );
 }
