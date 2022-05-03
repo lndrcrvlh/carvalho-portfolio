@@ -1,5 +1,8 @@
 import React from "react";
 import "./contact.css";
+import linkedin from "../../images/logos/linkedinLogo.png"
+import github from "../../images/logos/githubLogo.png"
+import medium from "../../images/logos/mediumLogo.jpeg"
 
 const Contact = () => {
   return (
@@ -8,14 +11,14 @@ const Contact = () => {
       
       <hr className="divider"></hr>
       <div className="social-links">
-        <a href="/" className="github">
-          github logo
+        <a href="https://github.com/lndrcrvlh" className="github">
+          <img src={github} alt="github" className="logo" />
         </a>
-        <a href="/" className="linkedin">
-          linkedin logo
+        <a href="https://www.linkedin.com/in/lndrcrvlh/" className="linkedin">
+          <img src={linkedin} alt="linkedin" className="logo" />
         </a>
-        <a href="/" className="medium">
-          medium logo
+        <a href="https://teixeiras.medium.com/" className="medium">
+        <img src={medium} alt="medium" className="logo" />
         </a>
       </div>
     </div>

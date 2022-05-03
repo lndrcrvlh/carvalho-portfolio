@@ -1,5 +1,5 @@
 .contact {
-  height: 100vh;
+  height: 40vh;
   background-color: #010401;
   color: #efefef;
   display: flex;
@@ -7,23 +7,28 @@
   align-items: center;
   justify-items: center;
 }
-.email-button{
-    margin: auto;
-    border: 2px solid #efefef;
-    color:#efefef;
-    text-decoration: none;
-    padding: 1vh 2vw;
+.email-button {
+  margin: auto;
+  border: 2px solid #efefef;
+  color: #efefef;
+  text-decoration: none;
+  padding: 1vh 2vw;
 }
 
 .social-links {
   padding: 1vh 1vw;
 }
 
-.social-links a{
-    padding: 1vh 1vw;
-    color: #efefef;
+.social-links a {
+  padding: 1vh 1vw;
+  color: #efefef;
 }
 .divider {
   color: #efefef;
   width: 90%;
+}
+
+.logo{
+    max-height: 8vh;
+    object-fit: contain;
 }
