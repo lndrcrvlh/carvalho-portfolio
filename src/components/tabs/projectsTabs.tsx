@@ -36,6 +36,15 @@ const style = {
   color: "#efefef",
   border: "none",
   fontFamily: "fira code",
+  ":hover": {
+    color: "#fff",
+    backgroundColor: "#111",
+  },
+  ".Mui-selected": {
+    backgroundColor: "#efefef",
+    color: "#010401",
+    borderBottomColor: "#010401",
+  },
 };
 
 function a11yProps(index: number) {
@@ -58,23 +67,25 @@ export default function BasicTabs() {
         width: "100%",
       }}
     >
-      <Box sx={{ borderBottom: 1, borderColor: "primary" }}>
+      <Box sx={{...style, borderBottom: 1, borderColor: "primary" }}>
         <Tabs
           sx={{ ...style }}
           className="tabs-buttons"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
+          scrollButtons={true}
+          allowScrollButtonsMobile
           centered
         >
           <Tab sx={{ ...style }} label="The Behavior Web" {...a11yProps(0)} />
           <Tab
-            sx={{...style}}
+            sx={{ ...style }}
             label="Recommendation Engines"
             {...a11yProps(1)}
           />
-          <Tab sx={{...style}} label="Dealflow" {...a11yProps(2)} />
-          <Tab sx={{...style}} label="Freelance" {...a11yProps(3)} />
+          <Tab sx={{ ...style }} label="Dealflow" {...a11yProps(2)} />
+          <Tab sx={{ ...style }} label="Freelance" {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>

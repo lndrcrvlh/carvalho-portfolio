@@ -10,6 +10,7 @@
 
 .projects-right{
     flex: 2;
+    display: block;
 }
 
 .projects-header{
@@ -21,10 +22,6 @@
     height: 100vh;
 }
 
-.project-container{
-    display: grid;
-    columns: 100%;
-}
 
 .project-header{
     font-size: 40px;
