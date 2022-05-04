@@ -6,6 +6,8 @@
 }
 .projects-left{
     flex: 1;
+    padding: 5vh 5vw 30vh 5vw;
+    align-self: flex-end;
 }
 
 .projects-right{
