@@ -67,7 +67,7 @@ export default function BasicTabs() {
         width: "100%",
       }}
     >
-      <Box sx={{...style, borderBottom: 1, borderColor: "primary" }}>
+      <Box sx={{ ...style, borderBottom: 1, borderColor: "primary" }}>
         <Tabs
           sx={{ ...style }}
           className="tabs-buttons"
@@ -97,14 +97,43 @@ export default function BasicTabs() {
         </p>
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <p>
+          I handled the ETL of several inboxes totaling more than 150,000 emails
+          using node to parse and transform, SQLite3 to further sanitize, and
+          finally load onto an open source CRM.
+        </p>
+        <p>
+          Started development of a command-line tool to drive a manufacturing
+          workflow using the camunda engine.
+        </p>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <p>
+          I started at Dealflow as a QA tester and conducted lots of rigorous
+          manual testing. I spent a lot of time pair programming and learning
+          essential best practices when programming, as well as navigating the
+          Linux terminal.
+        </p>{" "}
+        <p>
+          I eventually moved to the Product Management department where I
+          designed and oversaw the implementation of a revamped back-end
+          administrator web app. This web app added new features to allow
+          greater consistency and a higher rate of productivity for the research
+          team.{" "}
+        </p>
+        <p>
+          I implemented the ruby KPI dashboard dashing (succeeded by smashing)
+          to have constant insight into how our KBM are performing based on
+          results from Mixpanel and GA as well as our own SQL database.
+        </p>
+        <p>
+          I made profiles on the competitors in order to gain insights into what
+          areas we could make a greater impact as a business and used those
+          insights in designing wireframes and mockups.
+        </p>
       </TabPanel>
       <TabPanel value={value} index={3}>
-        Freelance projects I help people get the most out of their online
-        business.
+        <p>I help people get the most out of their online business.</p>
         <ul>
           Janoo
           <li>UX/UI adjustments to the online cart experience with CSS</li>

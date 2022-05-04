@@ -47,7 +47,7 @@ const About = () => {
         <div className="about-heading">Developer with Product Vision</div>
         <div className="about-bio">
           <p className="about-bio-paragraph">
-            I love the process of programming - one my favorite part usually
+            I love the process of programming - one of my favorite part usually
             comes in at the very beginning. I trace through the various aspects
             of the project and try to break things down into pieces as small as
             possible. Sometimes this is just a mental map, sometimes I like to

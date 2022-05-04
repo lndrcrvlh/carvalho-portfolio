@@ -13,6 +13,8 @@
 .projects-right{
     flex: 2;
     display: block;
+    margin: 5vh 0;
+    padding-right: 3vw;
 }
 
 .projects-header{
