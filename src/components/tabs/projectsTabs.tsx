@@ -95,6 +95,17 @@ export default function BasicTabs() {
           business through tech. Responsible for making tech related decisions,
           designing and implementing the wordpress website and managing the LMS.
         </p>
+        <p>
+          During my time here I have migrated hosting provider, created custom
+          business assets and a unique visual language for the website. This
+          includes banners, powerpoint slides and thumbnails.
+        </p>
+        <p>
+          As web master, I'm responsible for knowing about all aspects of the
+          business and how it might intersect with technology. From software to
+          hardware, I tackle this with a great curiosity and thirst for
+          knowledge.
+        </p>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <p>
