@@ -36,14 +36,14 @@ const style = {
   color: "#efefef",
   border: "none",
   fontFamily: "fira code",
-  ":hover": {
+  "&:hover": {
     color: "#fff",
     backgroundColor: "#111",
   },
-  ".Mui-selected": {
+  "&.Mui-selected": {
     backgroundColor: "#efefef",
     color: "#010401",
-    borderBottomColor: "#010401",
+    borderBottom: "#010401",
   },
 };
 
@@ -67,7 +67,7 @@ export default function BasicTabs() {
         width: "100%",
       }}
     >
-      <Box sx={{ ...style, borderBottom: 1, borderColor: "primary" }}>
+      <Box sx={{ ...style }}>
         <Tabs
           sx={{ ...style }}
           className="tabs-buttons"
