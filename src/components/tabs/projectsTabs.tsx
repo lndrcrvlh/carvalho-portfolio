@@ -96,6 +96,11 @@ export default function BasicTabs() {
           designing and implementing the wordpress website and managing the LMS.
         </p>
         <p>
+          My biggest project here has been making a custom Dashboard that pulls
+          data from the google forms API as well as the thinkific API. The
+          dashboard then provides data visualization using chart-js.
+        </p>
+        <p>
           During my time here I have migrated hosting provider, created custom
           business assets and a unique visual language for the website. This
           includes banners, powerpoint slides and thumbnails.
