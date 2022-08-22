@@ -3,7 +3,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-// import "./projectsTabs.css";
+import "./projectsTabs.css";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -74,9 +74,8 @@ export default function BasicTabs() {
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
-          scrollButtons={true}
+          scrollButtons="auto"
           allowScrollButtonsMobile
-          centered
         >
           <Tab sx={{ ...style }} label="The Behavior Web" {...a11yProps(0)} />
           <Tab
@@ -86,6 +85,7 @@ export default function BasicTabs() {
           />
           <Tab sx={{ ...style }} label="Dealflow" {...a11yProps(2)} />
           <Tab sx={{ ...style }} label="Freelance" {...a11yProps(3)} />
+          <Tab sx={{ ...style }} label="Personal Projects" {...a11yProps(4)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -166,6 +166,20 @@ export default function BasicTabs() {
             in quizzes.
           </li>
         </ul>
+      </TabPanel>
+      <TabPanel value={value} index={4}>
+        <p>
+          A flashcard app written in ReactJS connecting to a public Kanji API to
+          display random kanji and information pertaining to that Kanji, and
+          generate random kana, and keep track of the streak of correct answers
+          in session storage. Hosted in Google Cloud via Firebase.
+        </p>
+        <a
+          href="https://flashcard-app-3fe63.web.app/"
+          className="project-link-button"
+        >
+          View Flashcard App
+        </a>
       </TabPanel>
     </Box>
   );
