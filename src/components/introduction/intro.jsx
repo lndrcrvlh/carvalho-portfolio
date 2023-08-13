@@ -20,7 +20,7 @@ const Intro = () => {
           <h1 className="intro-heading">I'm Leandro Carvalho</h1>
           <div className="intro-title">
             <div className="intro-title-wrapper">
-              {qualities.map((quality) => {
+              {qualities.sort(() => Math.random() - 0.5).map((quality) => {
                 return (
                   <div className="intro-title-item" key={quality}>
                     {quality}

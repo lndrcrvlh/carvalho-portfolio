@@ -75,44 +75,83 @@ export default function BasicTabs() {
           onChange={handleChange}
           aria-label="basic tabs example"
           scrollButtons="auto"
+          TabIndicatorProps={{
+            style: {
+              backgroundColor: "#010401",
+            },
+          }}
           allowScrollButtonsMobile
         >
-          <Tab sx={{ ...style }} label="The Behavior Web" {...a11yProps(0)} />
+          <Tab sx={{ ...style }} label="AMAC" {...a11yProps(0)} />
+          <Tab sx={{ ...style }} label="The Behavior Web" {...a11yProps(1)} />
           <Tab
             sx={{ ...style }}
             label="Recommendation Engines"
-            {...a11yProps(1)}
+            {...a11yProps(2)}
           />
-          <Tab sx={{ ...style }} label="Dealflow" {...a11yProps(2)} />
-          <Tab sx={{ ...style }} label="Freelance" {...a11yProps(3)} />
-          <Tab sx={{ ...style }} label="Personal Projects" {...a11yProps(4)} />
+          <Tab sx={{ ...style }} label="Dealflow" {...a11yProps(3)} />
+          <Tab sx={{ ...style }} label="Freelance" {...a11yProps(4)} />
+          <Tab sx={{ ...style }} label="Personal Projects" {...a11yProps(5)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <p>Web master at the Behavior Web.</p>
+        <p>Full Stack Software Engineer at AMAC.</p>
         <p>
-          This role involves making sure that we can meet the needs of the
-          business through tech. Responsible for making tech related decisions,
-          designing and implementing the wordpress website and managing the LMS.
+          At AMAC I took ownership over the business reporting and production
+          boards - features on our internal dashboard that provided executives
+          with key insights into membership conversion and how revenue is being
+          generated.
         </p>
         <p>
-          My biggest project here has been making a custom Dashboard that pulls
-          data from the google forms API as well as the thinkific API. The
-          dashboard then provides data visualization using chart-js.
+          I took the iniative to start documentation - not only on terms and
+          concepts unique to the business to allow new developers to have an
+          easier ramp-up - but to make decisions about what procedures and
+          practices we will put into place as a development team. With
+          discussions with the team, the documentation solidified our version
+          control practices, the particular nuiances of our database design and
+          what constraints to keep in mind when adding new features.
         </p>
         <p>
-          During my time here I have migrated hosting provider, created custom
-          business assets and a unique visual language for the website. This
-          includes banners, powerpoint slides and thumbnails.
+          The bulk of the development at AMAC was either in PHP, with Laravel,
+          or in TypeScript, with React. Where we could, we leveraged MUI for
+          frontend components or advanced features in Laravel. In 2023, I was
+          responsible for upgrading the full dashboard project, with more than
+          200 components and dozens of backend Controllers, and this was managed
+          with virtually no down time and very few minor bugs thanks to
+          collaboration with the devops team.
         </p>
         <p>
-          As web master, I'm responsible for knowing about all aspects of the
-          business and how it might intersect with technology. From software to
-          hardware, I tackle this with a great curiosity and thirst for
-          knowledge.
+          I was also responsible for maintaining dozens of minor WordPress
+          websites, this involved implementing custom functions, custom repeater
+          fields and leveraging plugins when there was a perfect fit.
         </p>
       </TabPanel>
       <TabPanel value={value} index={1}>
+        <p>Full Stack Software Engineer & Web master at the Behavior Web.</p>
+        <p>
+          This role involved making sure that we met the needs of the business
+          through tech. I was responsible for making tech related decisions,
+          designing and implementing the wordpress website and managing the LMS.
+        </p>
+        <p>
+          My biggest project here was a custom Dashboard that pulled data from
+          the Google Forms API as well as the Thinkific API with Node-JS and
+          Axios. The dashboard then provided data visualization using Chart-js
+          and React.
+        </p>
+        <p>
+          During my time here I migrated hosting provider, created custom
+          designs and wireframes and a unique visual language for the website.
+          This includes banners, powerpoint slides, and thumbnails.
+        </p>
+        <p>
+          Web master, I was responsible for knowing about all aspects of the
+          business and how it might intersect with technology. From software to
+          hardware, I tackled this with a great curiosity and thirst for
+          knowledge.
+        </p>
+      </TabPanel>
+      <TabPanel value={value} index={2}>
         <p>
           I handled the ETL of several inboxes totaling more than 150,000 emails
           using node to parse and transform, SQLite3 to further sanitize, and
@@ -120,10 +159,10 @@ export default function BasicTabs() {
         </p>
         <p>
           Started development of a command-line tool to drive a manufacturing
-          workflow using the camunda engine.
+          workflow using the Camunda engine.
         </p>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={3}>
         <p>
           I started at Dealflow as a QA tester and conducted lots of rigorous
           manual testing. I spent a lot of time pair programming and learning
@@ -138,9 +177,10 @@ export default function BasicTabs() {
           team.{" "}
         </p>
         <p>
-          I implemented the ruby KPI dashboard dashing (succeeded by smashing)
-          to have constant insight into how our KBM are performing based on
-          results from Mixpanel and GA as well as our own SQL database.
+          I implemented the ruby KPI dashboard Dashing (succeeded by{" "}
+          <a href="https://smashing.github.io/">Smashing</a>) to have constant
+          insight into how our KBM are performing based on results from Mixpanel
+          and GA as well as our own SQL database.
         </p>
         <p>
           I made profiles on the competitors in order to gain insights into what
@@ -148,7 +188,7 @@ export default function BasicTabs() {
           insights in designing wireframes and mockups.
         </p>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={4}>
         <p>I help people get the most out of their online business.</p>
         <ul>
           Janoo
@@ -167,7 +207,7 @@ export default function BasicTabs() {
           </li>
         </ul>
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={5}>
         <p>
           A flashcard app written in ReactJS connecting to a public Kanji API to
           display random kanji and information pertaining to that Kanji, and
