@@ -9,11 +9,13 @@ const About = () => {
       <div className="about-left">
         <div className="about-skills">
           <div className="about-skills-wrapper">
-            {Object.keys(IMAGES).map((image) => {
-              return (
-                <img src={IMAGES[image]} alt={image} className="skill-logo" />
-              );
-            })}
+            {Object.keys(IMAGES)
+              .sort(() => Math.random() - 0.5)
+              .map((image) => {
+                return (
+                  <img src={IMAGES[image]} alt={image} className="skill-logo" />
+                );
+              })}
           </div>
         </div>
       </div>
