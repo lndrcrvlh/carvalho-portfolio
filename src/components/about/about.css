@@ -9,7 +9,6 @@
 .about-left {
   flex: 1;
   height: 100%;
-
 }
 .about-right {
   flex: 2;
@@ -21,37 +20,40 @@
   padding: 5vh 5vw 5vh 0px;
 }
 
-.about-skills{
-    background-color: #efefef;
-    height: 100%;
-    overflow: hidden;
+.about-skills {
+  background-color: #efefef;
+  height: 100%;
+  overflow: hidden;
 }
 
-.about-skills-wrapper{
-    height: 100%;
-    display: grid;
-    grid-template-columns: 50% 50% 50% 50% 50%;
-    animation: moveSkills 10s ease-out infinite alternate;
-    animation-delay: 3s;
+.about-skills-wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50%);
+  grid-template-rows: 33.3% 33.3% 33.3%;
+  /* grid-auto-rows: 0px; */
+  /* grid-template-columns: 50% 50% 50% 50% 50% 50% 50%; */
+  animation: moveSkills 10s ease-out infinite alternate;
+  animation-delay: 3s;
 }
 
-.skill-logo{
-    padding: 10%;
-    margin: auto;
-    max-height: 30%;
-    max-width: 30%;
+.skill-logo {
+  padding: 10%;
+  margin: auto;
+  max-height: 30%;
+  max-width: 30%;
 }
 
 @keyframes moveSkills {
-    33% {
-        transform: translateX(-50%);
-    }
+  33% {
+    transform: translateX(-50%);
+  }
 
-    66% {
-        transform: translateX(-100%);
-    }
+  66% {
+    transform: translateX(-100%);
+  }
 
-    100% {
-        transform: translateX(-150%);
-    }
+  100% {
+    transform: translateX(-150%);
+  }
 }
